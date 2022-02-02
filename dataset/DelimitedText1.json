@@ -1,0 +1,37 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "text doc.txt",
+				"folderPath": "Input",
+				"container": "demo-cont"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Ashu",
+				"type": "String"
+			},
+			{
+				"name": " As you might’ve guessed",
+				"type": "String"
+			},
+			{
+				"name": " an article addresses its readers.",
+				"type": "String"
+			}
+		]
+	}
+}
